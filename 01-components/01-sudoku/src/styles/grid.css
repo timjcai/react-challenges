@@ -1,0 +1,26 @@
+.Grid9x9 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10rem;
+  width: auto;
+  gap: 0px;
+}
+
+.Grid3x3 {
+  display: grid;
+  background-color: grey;
+  color: black;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: (7rem, auto);
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid black;
+}
+
+.Gridcell {
+  font-size: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
