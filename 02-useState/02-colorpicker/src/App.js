@@ -45,8 +45,10 @@ function App() {
     </div>
   );
 }
-// connect pointerdown + pointer move and pointer end
-// improve styling so that there is no jumping of the pointer
-// add a div to display the color
+
+// NEXT UP:
+// 1. connect pointerdown + pointer move and pointer end
+// 2. improve styling so that there is no jumping of the pointer
+// 3. add a div to display the color
 
 export default App;
