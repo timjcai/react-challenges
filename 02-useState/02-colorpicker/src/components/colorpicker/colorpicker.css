@@ -62,3 +62,9 @@
   width: 10em;
   border-radius: 16px;
 }
+
+.copytoclip {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+}

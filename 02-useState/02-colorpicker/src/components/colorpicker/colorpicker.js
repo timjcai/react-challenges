@@ -2,6 +2,7 @@ import React from 'react'
 import { colorHandler } from './colorhandler'
 import { useState } from 'react'
 import './colorpicker.css';
+import { BsFillClipboardFill } from 'react-icons/bs'
 
 function Colorpicker() {
   const [r, setR] = useState('0')
@@ -52,7 +53,9 @@ function Colorpicker() {
       </div>
 
       <div className="color-display">
-        <div className="square"></div>
+        <div className="square">
+          {/* <BsFillClipboardFill className="copytoclip" onClick={() => {navigator.clipboard.writeText(this.state.textToCopy)}}/> */}
+        </div>
         <h1>R:{r}</h1>
         <h1>G:{g}</h1>
         <h1>B:{b}</h1>
