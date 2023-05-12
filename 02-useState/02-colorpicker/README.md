@@ -1,13 +1,12 @@
 How to run:
 1. Clone Github Repo
-- gh repo clone timjcai/react-challenges
+> gh repo clone timjcai/react-challenges
 
 2. Navigate to colorpicker
-cd react-challenges/02-useState/02-colorpicker
+> cd react-challenges/02-useState/02-colorpicker
 
 3. Run server
-npm install
-npm run start
+> npm run start
 
 Step 1:
 > create a color picker bar - this is a CSS thing
