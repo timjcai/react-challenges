@@ -15,10 +15,13 @@ list of mini-project ideas that will somehow fit into my plan of building mini-r
 - Blog
 - Basic Timer App
 - ~~colorpicker~~
-- ~~Death Clock App~~
-- Pomodoro Timer
+- Death Clock App
+- ~~Pomodoro Timer~~
+- ~~Calculator App~~
+- ~~Wordle Clone~~
 - App to play 13 (with other players - with computers?)
 - App to help modulate training load
 - Notion Markup Clone
 - functioning Sudoku Clone
 - App that implements ChatGPT/OpenAI?
+- ~~NBA profile page - Rails API~~
