@@ -1,0 +1,63 @@
+.colorpicker {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: auto;
+  background: none;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.colorpalette-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.colorpalette {
+  background: linear-gradient(to bottom, #FF0000 0%, #FFFF00 16.67%, #00FF00 33.33%, #00FFFF 50%, #0000FF 66.67%, #FF00FF 83.33%,  #FF0000 100%);
+  width: 100px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pointer {
+  position: relative;
+  border: 5px solid black;
+  height: 10px;
+  border-radius: 10px;
+  width: 100px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  top: var(--handle-position);
+}
+
+.color-display {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 10em;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.square {
+  background-color: var(--handle-color);
+  height: 10em;
+  width: 10em;
+  border-radius: 16px;
+}
