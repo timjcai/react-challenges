@@ -31,3 +31,15 @@ Bonus:
 > - Implement a converter for RGB > HSL > HEX
 > - Implement div gradient that allows us to change the tone/darkness
 > - implement the logic of different colour sets (complementary colors etc)
+
+Inspiration App:
+> https://htmlcolorcodes.com/color-picker/
+
+
+# Code Review - Next Up: (lessons learnt)
+12th May - changes that need to be made
+> - when working with React, we want to stop using document.querySelector all together
+> - naming for colorHandler should change to describe the output it's creating
+> - utilise setState or props instead of regular javascript assignments (avoid using querySelector or get element by ID at all costs -> utilise setState and props)
+
+Solution:

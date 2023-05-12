@@ -1,4 +1,4 @@
-export function colorHandler(percentage) {
+export function createRGBValues(percentage) {
   if (percentage < (100/6)) {
     // increase [255, 0-> 255,0] (position 1, to 255)
     return increaseIntensityValue(0,1,percentage);
