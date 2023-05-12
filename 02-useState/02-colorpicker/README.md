@@ -75,6 +75,6 @@ Before
 
 After
 
-![alt text](learnings/pointer-props.png)
+![alt text](learnings/newpointer-implementation.png)
 
 ![alt text](learnings/square-props.png)
