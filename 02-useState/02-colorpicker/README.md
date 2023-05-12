@@ -46,9 +46,11 @@ Inspiration App:
 
 ### Solution:
 #### Before:
+
 ![alt text](learnings/pre-changes.png)
 
 #### After:
+
 ![alt text](learnings/new-changes.png)
 * - defining a variable using querySelector is only used so that we can call methods which manipulate the DOM (setAttribute(), setProperty )
 
@@ -56,17 +58,23 @@ Inspiration App:
 
 #### Example 1:
 Before
+
 ![alt text](learnings/olddragfunctionality.png)
 
 After
+
 ![alt text](learnings/newDrag.png)
+
 ![alt text](learnings/newstate.png)
 
 
 #### Example 2:
 Before
+
 ![alt text](learnings/oldfunctionality.png)
 
 After
+
 ![alt text](learnings/pointer-props.png)
+
 ![alt text](learnings/square-props.png)
