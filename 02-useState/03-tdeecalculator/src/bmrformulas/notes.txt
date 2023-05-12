@@ -1,0 +1,92 @@
+### BMR
+### 1. Harris-Benedict Equation (Revised 1984)
+The Harris-Benedict Equation (Revised 1984) is an updated version of the original Harris-Benedict equation. It is used to estimate Basal Metabolic Rate (BMR) based on age, weight, height, and gender. The revised equation accounts for advancements in metabolic research. Here are the equations for men and women:
+Men: BMR = 66.5 + (13.75 × weight in kg) + (5.003 × height in cm) - (6.755 × age in years)
+Women: BMR = 655.1 + (9.563 × weight in kg) + (1.850 × height in cm) - (4.676 × age in years)
+
+### 2. Mifflin-St. Jeor Equation
+The Mifflin-St. Jeor Equation is another widely used equation to estimate BMR. It is considered more accurate than the Harris-Benedict equation. Similar to the Harris-Benedict equation, it takes into account age, weight, height, and gender. Here are the equations for men and women:
+Men: BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) + 5
+Women: BMR = (10 × weight in kg) + (6.25 × height in cm) - (5 × age in years) - 161
+
+### 3. Katch-McArdle Equation
+The Katch-McArdle Equation is a BMR equation that incorporates lean body mass (LBM) into the calculation. LBM refers to the weight of the body minus the weight of body fat. This equation is considered more accurate for individuals with lower body fat percentages. The equation is as follows:
+
+BMR = 370 + (21.6 × LBM in kg)
+
+### 4. Harris-Benedict Equation (Original 1919)
+The Harris-Benedict Equation (Original 1919) is the original version of the Harris-Benedict equation. It is one of the earliest equations developed to estimate BMR. While it has been revised over the years, the original equation is still referenced. The equations are as follows:
+
+Men: BMR = 88.362 + (13.397 × weight in kg) + (4.799 × height in cm) - (5.677 × age in years)
+Women: BMR = 447.593 + (9.247 × weight in kg) + (3.098 × height in cm) - (4.330 × age in years)
+
+### 5. Cunningham Equation
+Cunningham Equation: The Cunningham equation is a formula used to estimate BMR by taking into account an individual's fat-free mass (FFM). It is often considered more accurate for individuals with low body fat percentages. The equation is as follows:
+
+BMR = 500 + (22 × FFM in kg)
+
+### 6. Owen Equation
+Owen Equation: The Owen equation is an alternative method to estimate BMR that takes into account both body weight and height. It is specifically developed for obese individuals. The equation is as follows:
+
+BMR = 330 + (4.35 × weight in kg) + (4.7 × height in cm)
+
+### 7. Schofield Equation
+The Schofield equation provides a set of equations to estimate Basal Metabolic Rate (BMR) based on age, gender, weight, and height. There are different equations for different age groups. Here are the Schofield equations for BMR:
+
+Age group: 0-3 years
+
+Boys: BMR = 60.9 × weight in kg - 54
+Girls: BMR = 61 × weight in kg - 51
+Age group: 3-10 years
+
+Boys: BMR = 22.7 × weight in kg + 495
+Girls: BMR = 22.5 × weight in kg + 499
+Age group: 10-18 years
+
+Boys: BMR = 17.5 × weight in kg + 651
+Girls: BMR = 12.2 × weight in kg + 746
+Age group: 18-30 years
+
+Men: BMR = 15.1 × weight in kg + 692
+Women: BMR = 14.7 × weight in kg + 496
+Age group: 30-60 years
+
+Men: BMR = 11.5 × weight in kg + 873
+Women: BMR = 8.7 × weight in kg + 829
+Age group: 60+ years
+
+Men: BMR = 13.5 × weight in kg + 487
+Women: BMR = 10.5 × weight in kg + 596
+These equations provide estimates of BMR based on the given age, weight, and gender. Remember that these equations are general estimations and may not account for individual variations.
+
+### 8. World Health Organization (WHO) Equation
+The WHO equation for calculating BMR (Basal Metabolic Rate) is a variation of the Schofield equations developed specifically for adults aged 18-60 years. It estimates BMR based on weight, height, age, and gender. Here is the WHO equation:
+
+For men:
+BMR = 13.75 × weight in kg + 5 × height in cm - 6.75 × age in years + 66.5
+
+For women:
+BMR = 9.56 × weight in kg + 1.85 × height in cm - 4.68 × age in years + 655.1
+
+In this equation, you would substitute the appropriate values for weight, height, and age. The resulting BMR value represents the estimated number of calories your body needs to maintain basic physiological functions at rest. Remember that this equation provides an estimate, and individual variations can exist.
+
+### 9. Roza and Shizgal Equation
+Roza and Shizgal Equation: The Roza and Shizgal equation is a widely used equation to estimate BMR. It is derived from a large dataset of healthy individuals. The equation is as follows:
+
+BMR = 88.362 + (13.397 × weight in kg) + (4.799 × height in cm) - (5.677 × age in years)
+
+
+### TDEE
+TDEE calculations:
+Sedentary: BMR × 1.2
+Lightly active: BMR × 1.375
+Moderately active: BMR × 1.55
+Very active: BMR × 1.725
+Extra active: BMR × 1.9
+
+
+Sedentary (little to no exercise)
+Lightly active (light exercise/sports 1-3 days per week)
+Moderately active (moderate exercise/sports 3-5 days per week)
+Very active (hard exercise/sports 6-7 days per week)
+Extra active (very hard exercise/sports & physical job or 2x training)

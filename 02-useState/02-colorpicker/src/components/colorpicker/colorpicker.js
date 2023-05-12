@@ -42,7 +42,7 @@ function Colorpicker() {
         <h1>R:{r}</h1>
         <h1>G:{g}</h1>
         <h1>B:{b}</h1>
-        <h2>&#91;{r},{g},{b}&#93;</h2>
+        <h2>rgb&#40;{r},{g},{b}	&#41;</h2>
       </div>
     </div>
   );
