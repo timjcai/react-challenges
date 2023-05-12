@@ -37,9 +37,36 @@ Inspiration App:
 
 
 # Code Review - Next Up: (lessons learnt)
-12th May - changes that need to be made
+### 12th May - changes that need to be made
 > - when working with React, we want to stop using document.querySelector all together
+
 > - naming for colorHandler should change to describe the output it's creating
+
 > - utilise setState or props instead of regular javascript assignments (avoid using querySelector or get element by ID at all costs -> utilise setState and props)
 
-Solution:
+### Solution:
+#### Before:
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/pre-changes.png)
+
+#### After:
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/new-changes.png)
+* - defining a variable using querySelector is only used so that we can call methods which manipulate the DOM (setAttribute(), setProperty )
+
+* - implemented useState where possible and to pass the State values as props into the DOM elements of the React Component
+
+#### Example 1:
+Before
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/olddragfunctionality.png)
+
+After
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/newDrag.png)
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/newstate.png)
+
+
+#### Example 2:
+Before
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/oldfunctionality.png)
+
+After
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/pointer-props.png)
+![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/square-props.png)
