@@ -49,24 +49,24 @@ Inspiration App:
 ![alt text](learnings/pre-changes.png)
 
 #### After:
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/new-changes.png)
+![alt text](learnings/new-changes.png)
 * - defining a variable using querySelector is only used so that we can call methods which manipulate the DOM (setAttribute(), setProperty )
 
 * - implemented useState where possible and to pass the State values as props into the DOM elements of the React Component
 
 #### Example 1:
 Before
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/olddragfunctionality.png)
+![alt text](learnings/olddragfunctionality.png)
 
 After
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/newDrag.png)
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/newstate.png)
+![alt text](learnings/newDrag.png)
+![alt text](learnings/newstate.png)
 
 
 #### Example 2:
 Before
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/oldfunctionality.png)
+![alt text](learnings/oldfunctionality.png)
 
 After
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/pointer-props.png)
-![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/square-props.png)
+![alt text](learnings/pointer-props.png)
+![alt text](learnings/square-props.png)
