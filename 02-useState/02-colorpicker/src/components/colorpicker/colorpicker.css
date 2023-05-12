@@ -39,6 +39,7 @@
   justify-content: center;
   margin-top: -10px;
   top: var(--handle-position);
+  pointer-events: none;
 }
 
 .color-display {
