@@ -46,7 +46,7 @@ Inspiration App:
 
 ### Solution:
 #### Before:
-![alt text](02-useState/02-colorpicker/learnings/pre-changes.png)
+![alt text](learnings/pre-changes.png)
 
 #### After:
 ![alt text](https://github.com/timjcai/react-challenges/tree/main/02-useState/02-colorpicker/learnings/new-changes.png)
