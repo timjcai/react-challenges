@@ -1,4 +1,4 @@
-How to run:
+# How to run:
 1. Clone Github Repo
 > gh repo clone timjcai/react-challenges
 
@@ -8,6 +8,7 @@ How to run:
 3. Run server
 > npm run start
 
+# Tasks/Stories to recreate this project
 Step 1:
 > create a color picker bar - this is a CSS thing
 https://www.rgbtohex.net/
