@@ -33,7 +33,7 @@ team_data = [
     'slug': 'CHO',
     'arena': 'Spectrum Center',
     'conference': 'East',
-    'winsandlosses': '27-55'
+    'winsandlosses': '27-55',
   },
   {
     'name': 'Chicago Bulls',
