@@ -177,7 +177,7 @@ team_data = [
   },
   {
     'name': 'Portland Trail Blazers',
-    'slug': 'blazers',
+    'slug': 'POR',
     'arena': 'Moda Center',
     'conference': 'West',
     'winsandlosses': '33-49'
@@ -205,14 +205,14 @@ team_data = [
   },
   {
     'name': 'Utah Jazz',
-    'slug': 'jazz',
+    'slug': 'UTA',
     'arena': 'Vivint Arena',
     'conference': 'West',
     'winsandlosses': '37-45'
   },
   {
     'name': 'Washington Wizards',
-    'slug': 'wizards',
+    'slug': 'WAS',
     'arena': 'Capital One Arena',
     'conference': 'East',
     'winsandlosses': '35-47'
