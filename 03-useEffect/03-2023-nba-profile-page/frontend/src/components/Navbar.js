@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <Flex justify='space-between' w='100vw' px='40' py='2'>
+    <Flex justify='space-between' w='60vw' py='2'>
       <Box>
         <Link to="/"> home </Link>
       </Box>
       <Spacer />
-      <Box>
+      <Flex gap='20px'>
         <Link to="/conference"> conferences </Link>
-        <Link to="/conference"> rankings </Link>
-      </Box>
+        <Link to="/rankings"> rankings </Link>
+      </Flex>
     </Flex>
   )
 }

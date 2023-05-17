@@ -11,14 +11,17 @@ function Teamcard(props) {
 
   // const { name, id, slug, winsandlosses, conference } = props
   return (
-    <Flex className="teamcard" key={props.id} boxShadow='outline' p='6' rounded='md' w='45vw' direction='row' justify='space-around' m='1em'>
+    <Flex className="teamcard" key={props.id} boxShadow='outline' p='6' rounded='md' w='60vw' direction='row' justify='left' gap='5vw'm='1em'>
       <Box>
         <AdvancedImage cldImg={myImage} />
       </Box>
       <Flex justify='space-between' direction='column'>
-        <Heading size='xl'>{props.name}</Heading>
+        <Flex direction='row' gap='20px'>
+          <Heading size='xl'>{props.name}</Heading>
+          <Text>({ props.slug })</Text>
+        </Flex>
+
         <Flex className="team-details" justify='space-between'>
-          <Text>{ props.slug }</Text>
           <Text>{ props.winsandlosses }</Text>
           <Text>{ props.conference }</Text>
         </Flex>
