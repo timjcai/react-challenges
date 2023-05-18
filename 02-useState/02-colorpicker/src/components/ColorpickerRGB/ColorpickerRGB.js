@@ -1,9 +1,9 @@
 import React from 'react'
-import { createRGBValues } from './colorhandler'
+import { createRGBValues } from './ColorhandlerRGB'
 import { useState } from 'react'
 import './colorpicker.css';
 
-function Colorpicker() {
+function ColorpickerRGB() {
   const [r, setR] = useState('0')
   const [g, setG] = useState('0')
   const [b, setB] = useState('0')
@@ -58,4 +58,4 @@ function Colorpicker() {
   );
 }
 
-export default Colorpicker
+export default ColorpickerRGB

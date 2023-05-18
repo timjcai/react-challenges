@@ -1,11 +1,19 @@
 import './App.css';
 import React from 'react';
-import Colorpicker from './components/colorpicker/colorpicker';
+import ColorpickerRGB from './components/ColorpickerRGB/ColorpickerRGB';
+import ColorpickerHSL from './components/ColorpickerHSL/ColorpickerHSL';
+import {Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <Colorpicker />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<ColorpickerRGB />} />
+        <Route path="/2d" element={<ColorpickerRGB />} />
+        <Route path="/hsl" element={<ColorpickerHSL />} />
+      </Routes>
     </div>
   );
 }
