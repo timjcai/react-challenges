@@ -27,7 +27,7 @@ export function increaseIntensityValue(maxPosition, varPosition, percentage) {
   const intensity = calcIntensity(percentage)
   const rgb = [0, 0, 0]
   rgb[maxPosition] = 255
-  rgb[varPosition] = Math.floor((256 * intensity) - 1)
+  rgb[varPosition] = Math.floor((256 * intensity))
   return rgb
 }
 
@@ -37,7 +37,7 @@ export function decreaseIntensityValue(maxPosition, varPosition, percentage) {
   const intensity = calcIntensity(percentage)
   const rgb = [0, 0, 0]
   rgb[maxPosition] = 255
-  rgb[varPosition] = 256-Math.floor((256 * intensity) - 1)
+  rgb[varPosition] = 255-Math.floor((256 * intensity))
   return rgb
 }
 
