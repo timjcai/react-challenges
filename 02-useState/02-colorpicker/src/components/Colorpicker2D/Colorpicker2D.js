@@ -3,9 +3,11 @@ import './colorpicker2D.css'
 
 function Colorpicker2D() {
   return (
-    <div>
-      <div className="bg lr"></div>
-      <div className="bg td"></div>
+    <div className="ColorPicker2D">
+      <div className="picker-container">
+        <div className="bg lr"></div>
+        <div className="bg ud"></div>
+      </div>
     </div>
   )
 }
