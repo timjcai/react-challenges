@@ -6,10 +6,10 @@
 }
 
 .bg {
-  border: 1px solid black;
   height: 500px;
   width: 500px;
   position: absolute;
+  border-radius: 3px;
 }
 
 .bg.lr {
@@ -29,4 +29,19 @@
   position: relative;
   height: 500px;
   width: 500px;
+  border-radius: 3px;
+}
+
+.picker-pointer {
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  z-index: 5;
+  pointer-events: none;
+  position: absolute;
+  top: var(--handle-y);
+  left: var(--handle-x);
+  /* top: -1%;
+  left: -1%; */
 }
