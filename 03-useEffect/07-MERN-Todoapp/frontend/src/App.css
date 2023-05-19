@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: white;
+
+  padding-top: 25px;
+  font-family: 'Chivo Mono', monospace;
 }
 
 .App-logo {
@@ -14,7 +23,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

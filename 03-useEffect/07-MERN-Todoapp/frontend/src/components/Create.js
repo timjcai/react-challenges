@@ -12,7 +12,7 @@ function Create() {
 
   return (
     <div>
-      <section class="column">
+      <section className="column">
         <h1>To Do App</h1>
         <button className="create" onClick={() => { setShowForm(!showForm) }}>New Task</button>
         {showForm &&

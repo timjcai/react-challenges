@@ -19,8 +19,6 @@ mongoose
   .then((result) => app.listen(3000, () => console.log(`Server is running on Port ${process.env.PORT}`)))
   .catch((err)=>console.log(err))
 
-
-
 // routes
 // index
 app.get('/api/v1/todos', (req, res) => {
