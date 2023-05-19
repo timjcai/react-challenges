@@ -20,30 +20,36 @@ mongoose
 app.use(express.urlencoded({ extended: true }))
 
 // routes
+// index
 app.get('/api/v1/todos', (req, res) => {
   Todo.find()
     .then((result)=>{res.send(result)})
     .catch((err)=>console.log(err))
 })
 
+// create
+app.post('/api/v1/todos', (req, res) => {
+  Todo.find()
+    .then((result)=>{res.send(result)})
+    .catch((err)=>console.log(err))
+})
+
+// show individual todo
+app.get('/api/v1/todos/:id', (req, res) => {
+  const id = req.params.id
+  Todo.findById(id)
+    .then((result)=>{res.send(result)})
+    .catch((err)=>console.log(err))
+})
+
+// update individual todo
 app.get('/api/v1/todos', (req, res) => {
   Todo.find()
     .then((result)=>{res.send(result)})
     .catch((err)=>console.log(err))
 })
 
-app.get('/api/v1/todos', (req, res) => {
-  Todo.find()
-    .then((result)=>{res.send(result)})
-    .catch((err)=>console.log(err))
-})
-
-app.get('/api/v1/todos', (req, res) => {
-  Todo.find()
-    .then((result)=>{res.send(result)})
-    .catch((err)=>console.log(err))
-})
-
+// delete individual instance
 app.get('/api/v1/todos', (req, res) => {
   Todo.find()
     .then((result)=>{res.send(result)})
