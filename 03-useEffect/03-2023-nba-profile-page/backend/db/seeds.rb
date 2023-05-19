@@ -51,7 +51,7 @@ team_data = [
   },
   {
     'name': 'Dallas Mavericks',
-    'slug': 'mavericks',
+    'slug': 'DAL',
     'arena': 'American Airlines Center',
     'conference': 'West',
     'winsandlosses': '41-41'
@@ -88,7 +88,7 @@ team_data = [
     'name': 'Indiana Pacers',
     'slug': 'IND',
     'arena': 'Bankers Life Fieldhouse',
-    'conference': 'West',
+    'conference': 'East',
     'winsandlosses': '35-47'
   },
   {
