@@ -1,0 +1,89 @@
+.list-item {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+}
+
+.delete {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+}
+.delete:hover {
+  color: rgba(92, 92, 92, 0.24);
+  transition: 0.3s;
+}
+
+.edit,
+.save {
+  position: fixed;
+  right: 40px;
+  top: 15px;
+}
+.edit:hover,
+.save:hover {
+  color: rgba(92, 92, 92, 0.24);
+  transition: 0.3s;
+}
+
+.ph-circle,
+.checkbtn {
+  margin-top: 10px;
+  font-size: 60px;
+}
+
+input.todo {
+  display: flex;
+  margin: 1rem;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+
+input.todo.tag {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.completed {
+  margin-top: 20px;
+  opacity: 1;
+  margin-left: 5px;
+}
+
+[data-state='true'] .checkbtn {
+  color: var(--yellow);
+}
+
+div.editing {
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.1px);
+  -webkit-backdrop-filter: blur(8.1px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.black {
+  color: var(--dark);
+}
+
+.todo:not(:read-only) {
+  background-color: none;
+  opacity: 0.75;
+  border-radius: 1rem;
+  color: var(--dark);
+}
+
+.todo-wrapper:hover {
+  cursor: pointer;
+}
+
+.todo.title {
+  font-size: 20px;
+}
+
+.todo.tag {
+  opacity: 0.5;
+}

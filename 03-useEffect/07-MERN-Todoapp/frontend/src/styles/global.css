@@ -1,0 +1,69 @@
+:root {
+  --dark: #2a2f4f;
+  --dark-purple: #9384d1;
+  --purple: #917fb3;
+  --light-purple: #c9a7eb;
+  --pink: #e5beec;
+  --pastel-pink: #ecc9ee;
+  --light-pink: #fde2f3;
+  --yellow: #ffdcb6;
+}
+
+body {
+  margin: 0px;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: white;
+
+  padding-top: 25px;
+  font-family: 'Chivo Mono', monospace;
+}
+
+section,
+.task-block {
+  background: rgba(92, 92, 92, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(92, 92, 92, 0.24);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 1px solid transparent;
+}
+
+.column {
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Chivo Mono', monospace;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+}

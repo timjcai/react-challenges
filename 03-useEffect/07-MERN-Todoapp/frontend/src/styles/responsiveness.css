@@ -1,0 +1,69 @@
+@media only screen and (max-width: 680px) {
+  section,
+  .task-block {
+    min-width: 300px;
+    max-width: 800px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .create {
+    width: 100%;
+  }
+  .create-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .create.plus {
+    height: 25px;
+    align-self: center;
+    width: 100%;
+  }
+  .todo-wrapper {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  section,
+  .task-block {
+    min-width: 300px;
+    max-width: 800px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  .create-form {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .create.plus {
+    height: 25px;
+    align-self: center;
+    width: 25px;
+  }
+  .todo-wrapper {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  section,
+  .task-block {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .create-form {
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  .create.plus {
+    height: 25px;
+    align-self: center;
+    width: 25px;
+  }
+  .todo-wrapper {
+    width: 80%;
+  }
+}
