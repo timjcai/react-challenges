@@ -2,9 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv').config();
 const Todo = require('./models/todo')
+const cors = require('cors')
 
+// middleware
 const app = express();
 app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+app.use(cors({origin: 'http://localhost:3001'}))
 
 // mongoDB connection
 mongoose
@@ -15,9 +19,7 @@ mongoose
   .then((result) => app.listen(3000, () => console.log(`Server is running on Port ${process.env.PORT}`)))
   .catch((err)=>console.log(err))
 
-// middleware
 
-app.use(express.urlencoded({ extended: true }))
 
 // routes
 // index
@@ -50,15 +52,33 @@ app.get('/api/v1/todos/:id', (req, res) => {
 })
 
 // update individual todo
-app.get('/api/v1/todos', (req, res) => {
-  Todo.find()
-    .then((result)=>{res.send(result)})
-    .catch((err)=>console.log(err))
+app.patch('/api/v1/todos/:id', (req, res) => {
+  const id = req.params.id
+  const todoToUpdate = Todo.findById(id)
+  if (!todoToUpdate) return res.status(404).send('To do not found...')
+  const updates = req.body
+  console.log(updates)
+  if (updates.hasOwnProperty('completed')) {
+    const completeChange = !JSON.parse(updates['completed'])
+    console.log(completeChange)
+    updates['completed'] = completeChange
+    console.log(updates)
+  }
+  Todo.findByIdAndUpdate(id, updates)
+    .then((result) => {
+      console.log(result)
+      res.send(result)
+    })
+    .catch((err) => {
+      console.log(err)
+    })
 })
 
 // delete individual instance
-app.get('/api/v1/todos', (req, res) => {
-  Todo.find()
-    .then((result)=>{res.send(result)})
+app.delete('/api/v1/todos/:id', (req, res) => {
+  const id = req.params.id
+  console.log(id)
+  Todo.findByIdAndDelete(id)
+    .then((result) => { res.redirect('/api/v1/todos')})
     .catch((err)=>console.log(err))
 })
