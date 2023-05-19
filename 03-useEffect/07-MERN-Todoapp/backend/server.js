@@ -29,8 +29,15 @@ app.get('/api/v1/todos', (req, res) => {
 
 // create
 app.post('/api/v1/todos', (req, res) => {
-  Todo.find()
-    .then((result)=>{res.send(result)})
+  const data = req.body
+  const todo = new Todo(data)
+  console.log(todo)
+
+  todo
+    .save()
+    .then((result) => {
+      res.redirect('/api/v1/todos')
+    })
     .catch((err)=>console.log(err))
 })
 
