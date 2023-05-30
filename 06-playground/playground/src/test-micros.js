@@ -4,7 +4,7 @@ import Progressbar from './components/Progressbar/Progressbar';
 
 function Testmicros() {
   return (
-    <StyledCard>
+    <StyledCard width="500px">
       <Progressbar title="Protein" percentageCompleted="30%"/>
       <Progressbar title="Fat" percentageCompleted="40%"/>
       <Progressbar title="Carbohydrates" percentageCompleted="60%"/>

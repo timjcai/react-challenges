@@ -6,7 +6,7 @@ import Section from '../Section/Section';
 function Card({ props }) {
   const { title, description, tags} = props
   return (
-    <StyledCard>
+    <StyledCard width="700px">
       <h1>{title}</h1>
       <p>{description}</p>
       <Section items={tags?.map((label) => {
