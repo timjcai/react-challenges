@@ -8,14 +8,15 @@ const activityTypeMapping: { [key in ActivityType]: number } = {
   athlete: 1.9
 }
 
-export function calculateTDEE(sex: SexType, measurement:MeasurementType, age:number, height:number, weight:number, activity:ActivityType) {
+export function calculateTDEE(sex: SexType, measurement:MeasurementType, age:number, height:number, weight:number, activity: ActivityType) {
   if (measurement === 'imperial') {
-    return calculateBMRImperial(sex, weight, height, age) * activityTypeMapping[activity]
+    return Math.round(calculateBMRImperial(sex, weight, height, age) * activityTypeMapping[activity])
   } else {
     return Math.round(calculateBMRMetric(sex, weight, height, age) * activityTypeMapping[activity])
   }
 }
 
+// Mifflin-St. Jeor Equation
 export function calculateBMRMetric(sex: SexType, weight: number, height: number, age: number): number {
   if (sex === 'male') {
     return Math.round((10 * weight) + (6.25 * height) - (5 * age) + 5);
@@ -26,8 +27,9 @@ export function calculateBMRMetric(sex: SexType, weight: number, height: number,
 
 export function calculateBMRImperial(sex: SexType, weight: number, height: number, age: number): number {
   if (sex === 'male') {
-
+    return Math.round(((4.536 * weight) + (15.88 * height) - (5 * age) + 5));
   } else {
-
+    return Math.round(((4.536 * weight) + (15.88 * height) - (5 * age) - 161));
   }
 }
+// 1315.44 + 1175.12 - 85 + 5
