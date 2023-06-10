@@ -4,7 +4,7 @@ import { StyledFrame } from './Frame.styles'
 function Frame() {
   return (
     <StyledFrame>
-      <img src="./assets/iphoneFrame.png" alt="iPhone 14 Frame"></img>
+      <img src="./assets/iphoneFrame.png" alt="iPhone 14 Frame" />
     </StyledFrame>
   )
 }
