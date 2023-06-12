@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import { StyledSelectorButton, StyledWrapper } from './SelectorButton.styles'
-import { Logo } from '../common/Logo/Logo'
-import { PaymentBrands, RadioSelectorGroups } from '../../types';
+import { IconLogo } from '../common/Logo/IconLogo'
+import { BankingBrands, PaymentBrands, RadioSelectorGroups } from '../../types';
 
 interface brandProps {
-  brand: PaymentBrands,
-  name: RadioSelectorGroups
+  iconbrand?: PaymentBrands,
+  name: RadioSelectorGroups,
+  companylogo?: BankingBrands
 }
 
 function SelectorButton(props: brandProps) {
-  const [logo, setLogo] = useState(props.brand);
+  const [logo, setLogo] = useState(props.iconbrand);
   const [inputName, setInputName] = useState(props.name)
 
   return (
@@ -18,7 +19,7 @@ function SelectorButton(props: brandProps) {
         <input type="radio" name={ inputName } />
         <p>{ logo }</p>
       </StyledWrapper>
-      <Logo logo={ logo } />
+      { props.iconbrand && <IconLogo logo={logo!} />}
     </StyledSelectorButton>
   )
 }

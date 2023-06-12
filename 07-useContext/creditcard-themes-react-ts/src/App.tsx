@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <SelectorButton brand={'Paypal'} name={'paymentbrands'} />
-        <SelectorButton brand={'Googlepay'} name={'paymentbrands'}/>
-        <SelectorButton brand={ 'Applepay' } name={'paymentbrands'}/>
+        <SelectorButton iconbrand={ 'Paypal' } name={'paymentbrands'} />
+        <SelectorButton iconbrand={ 'Googlepay' } name={'paymentbrands'}/>
+        <SelectorButton iconbrand={ 'Applepay' } name={'paymentbrands'}/>
       </header>
     </div>
   );

@@ -2,11 +2,12 @@ import React, { FC } from 'react'
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { PaymentBrands } from '../../../types';
-import { StyledLogo } from './Logo.styles'
+import { StyledIconLogo } from './IconLogo.styles'
 import {
   faPaypal,
   faApplePay,
   faGooglePay,
+  faFacebook
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faCreditCard
@@ -16,18 +17,18 @@ const PaymentMapping: { [key in PaymentBrands]: IconDefinition } = {
   Paypal: faPaypal,
   Applepay: faApplePay,
   Googlepay: faGooglePay,
-  "Credit Card": faCreditCard,
+  "Credit Card": faCreditCard
 };
 
 type LogoProps = {
   logo: PaymentBrands
 }
 
-export const Logo: FC<LogoProps> = ({ logo }) => {
+export const IconLogo: FC<LogoProps> = ({ logo }) => {
   const icon = PaymentMapping[logo];
   return (
-    <StyledLogo>
+    <StyledIconLogo>
       <FontAwesomeIcon icon={icon} width={32} />
-    </StyledLogo>
+    </StyledIconLogo>
   )
 }
