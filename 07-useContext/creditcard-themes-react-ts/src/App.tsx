@@ -9,7 +9,8 @@ function App() {
       <header className="App-header">
         <SelectorButton iconbrand={ 'Paypal' } name={'paymentbrands'} />
         <SelectorButton iconbrand={ 'Googlepay' } name={'paymentbrands'}/>
-        <SelectorButton iconbrand={ 'Applepay' } name={'paymentbrands'}/>
+        <SelectorButton iconbrand={'Applepay'} name={'paymentbrands'} />
+        <SelectorButton companylogo={ 'Up' } name={'bankingbrands'}/>
       </header>
     </div>
   );

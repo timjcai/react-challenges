@@ -7,7 +7,6 @@ import {
   faPaypal,
   faApplePay,
   faGooglePay,
-  faFacebook
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faCreditCard
