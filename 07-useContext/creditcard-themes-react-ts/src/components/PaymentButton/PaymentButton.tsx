@@ -1,13 +1,22 @@
-import React from 'react'
-import { StyledPaymentButton } from './PaymentButton.styles'
+import React, { useState } from 'react'
+import { StyledPaymentButton, StyledWrapper } from './PaymentButton.styles'
 import { Logo } from '../common/Logo/Logo'
+import { PaymentBrands } from '../../types';
 
-function PaymentButton() {
+interface brandProps {
+  brand: PaymentBrands,
+}
+
+function PaymentButton(props: brandProps) {
+  const [logo, setLogo] = useState(props.brand);
+
   return (
     <StyledPaymentButton>
-      <input type="radio" />
-      <p>Paypal</p>
-      <Logo logo={'Paypal'} />
+      <StyledWrapper>
+        <input type="radio" name="paymentbrand"/>
+        <p>{ logo }</p>
+      </StyledWrapper>
+      <Logo logo={logo} />
     </StyledPaymentButton>
   )
 }
