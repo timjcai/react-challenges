@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyledPaymentButton, StyledWrapper } from './PaymentButton.styles'
+import { StyledSelectorButton, StyledWrapper } from './SelectorButton.styles'
 import { Logo } from '../common/Logo/Logo'
 import { PaymentBrands, RadioSelectorGroups } from '../../types';
 
@@ -8,19 +8,19 @@ interface brandProps {
   name: RadioSelectorGroups
 }
 
-function PaymentButton(props: brandProps) {
+function SelectorButton(props: brandProps) {
   const [logo, setLogo] = useState(props.brand);
   const [inputName, setInputName] = useState(props.name)
 
   return (
-    <StyledPaymentButton>
+    <StyledSelectorButton>
       <StyledWrapper>
-        <input type="radio" name="paymentbrand"/>
+        <input type="radio" name={ inputName } />
         <p>{ logo }</p>
       </StyledWrapper>
-      <Logo logo={logo} />
-    </StyledPaymentButton>
+      <Logo logo={ logo } />
+    </StyledSelectorButton>
   )
 }
 
-export default PaymentButton
+export default SelectorButton

@@ -27,7 +27,7 @@ export const Logo: FC<LogoProps> = ({ logo }) => {
   const icon = PaymentMapping[logo];
   return (
     <StyledLogo>
-      <FontAwesomeIcon icon={icon} />
+      <FontAwesomeIcon icon={icon} width={32} />
     </StyledLogo>
   )
 }

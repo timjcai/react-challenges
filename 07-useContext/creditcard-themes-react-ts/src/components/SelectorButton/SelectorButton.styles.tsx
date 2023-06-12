@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const StyledPaymentButton = styled.div`
+export const StyledSelectorButton = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
