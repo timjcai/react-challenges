@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <PaymentButton brand={'Paypal'} />
-        <PaymentButton brand={'Googlepay'} />
-        <PaymentButton brand={ 'Applepay' } />
+        <PaymentButton brand={'Paypal'} name={'paymentbrands'} />
+        <PaymentButton brand={'Googlepay'} name={'paymentbrands'}/>
+        <PaymentButton brand={ 'Applepay' } name={'paymentbrands'}/>
       </header>
     </div>
   );
