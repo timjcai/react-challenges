@@ -11,3 +11,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --form-control-color: rebeccapurple;
+  --black: black;
+  --white: #ffffff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+input[type="radio"] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: var(--white);
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 0.75em;
+  height: 0.75em;
+  border: 0.15em solid var(--black);
+  border-radius: 50%;
+  margin-top: 1.3em;
+  transform: translateY(-0.075em);
+}
+
+input[type="radio"]::before {
+  content: "";
+  width: 0.1em;
+  height: 0.1em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 0.1em 0.1em var(--form-control-color);
+  background-color: CanvasText;
+}
+
+/* input[type="radio"]:checked::before {
+  transform: scale(1);
+} */
+
+input[type="radio"]:focus {
+  outline: max(0.3px, 0.1em) solid currentColor;
+  outline-offset: max(0.3px, 0.1em);
+  background-color: var(--black);
+}
+.form-control:focus-within {
+  color: var(--form-control-color);
+}
