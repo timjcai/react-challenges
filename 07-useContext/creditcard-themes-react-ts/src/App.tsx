@@ -11,6 +11,10 @@ function App() {
         <SelectorButton iconbrand={ 'Googlepay' } name={'paymentbrands'}/>
         <SelectorButton iconbrand={'Applepay'} name={'paymentbrands'} />
         <SelectorButton companylogo={ 'Up' } name={'bankingbrands'}/>
+        <SelectorButton companylogo={'CBA'} name={'bankingbrands'} />
+        <SelectorButton companylogo={'ANZ'} name={'bankingbrands'} />
+        <SelectorButton companylogo={'Macquarie'} name={'bankingbrands'} />
+
       </header>
     </div>
   );
