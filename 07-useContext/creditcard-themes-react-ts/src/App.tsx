@@ -2,22 +2,23 @@ import React from 'react';
 import './App.css';
 import Frame from './components/common/Frame/Frame';
 import SelectorButton from './components/SelectorButton/SelectorButton'
-import Background from './components/common/Frame/Background';
+import { Container } from './components/common/Container/Container';
+import { StyledContainer } from './components/common/Container/Container.styles';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Frame />
-        <div>
-          <SelectorButton iconbrand={ 'Paypal' } name={'paymentbrands'} />
-          <SelectorButton iconbrand={ 'Googlepay' } name={'paymentbrands'}/>
-          <SelectorButton iconbrand={'Applepay'} name={'paymentbrands'} />
-          <SelectorButton companylogo={ 'Up' } name={'bankingbrands'}/>
-          <SelectorButton companylogo={'CBA'} name={'bankingbrands'} />
-          <SelectorButton companylogo={'ANZ'} name={'bankingbrands'} />
-          <SelectorButton companylogo={'Macquarie'} name={'bankingbrands'} />
-        </div>
+        <Container $direction={'row'}>
+          <Frame />
+          <StyledContainer $direction={'column'} $ms={1} $justify={ 'center' }>
+            <SelectorButton companylogo={'Up'} group={'bankingbrands'} />
+            <SelectorButton companylogo={'CBA'} group={'bankingbrands'} />
+            <SelectorButton companylogo={'ANZ'} group={'bankingbrands'} />
+            <SelectorButton companylogo={'NAB'} group={'bankingbrands'} />
+            <SelectorButton companylogo={'Westpac'} group={'bankingbrands'} />
+          </StyledContainer>
+        </Container>
       </header>
     </div>
   );

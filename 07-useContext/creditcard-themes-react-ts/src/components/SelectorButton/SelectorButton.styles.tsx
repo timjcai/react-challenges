@@ -14,6 +14,7 @@ export const StyledSelectorButton = styled.div`
   align-items: center;
   font-size: 16px;
   margin-bottom: 10px;
+  z-index: 10;
 `;
 
 export const StyledWrapper = styled.div`

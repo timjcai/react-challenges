@@ -6,19 +6,19 @@ import { BankingBrands, PaymentBrands, RadioSelectorGroups } from '../../types';
 
 interface brandProps {
   iconbrand?: PaymentBrands,
-  name: RadioSelectorGroups,
+  group: RadioSelectorGroups,
   companylogo?: BankingBrands
 }
 
 function SelectorButton(props: brandProps) {
   const [iconlogo, setIconLogo] = useState(props.iconbrand);
-  const [inputName, setInputName] = useState(props.name)
+  const [inputGroup, setInputGroup] = useState(props.group)
   const [brandlogo, setBrandLogo] = useState(props.companylogo);
 
   return (
     <StyledSelectorButton>
       <StyledWrapper>
-        <input type="radio" name={ inputName } />
+        <input type="radio" name={ inputGroup } />
         { props.iconbrand && <p> { iconlogo! } </p>}
         { props.companylogo && <p> { brandlogo! } </p>}
       </StyledWrapper>

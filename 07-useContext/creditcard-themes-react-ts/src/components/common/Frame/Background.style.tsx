@@ -19,6 +19,6 @@ export const StyledBackground = styled.div<BackgroundProps>`
 `;
 
 export const BackgroundWrapper = styled.div`
-  margin-top: 176px;
+  margin-top: 20px;
   width: 466px;
 `;
