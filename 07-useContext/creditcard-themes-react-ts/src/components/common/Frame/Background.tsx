@@ -1,13 +1,29 @@
 import React from 'react'
-import { StyledBackground } from './Background.style'
+import { StyledBackground, BackgroundWrapper } from './Background.style'
 
 function Background() {
   return (
-    <div>
-      <StyledBackground $colorOne={'#000000'} $colorTwo={'#000000'}></StyledBackground>
-      <StyledBackground $colorOne={'#FFFFFF'} $colorTwo={'#000000'}></StyledBackground>
-      <StyledBackground $colorOne={'#FFFFFF'} $colorTwo={'#FFFFFF'}></StyledBackground>
-    </div>
+    <BackgroundWrapper>
+      <StyledBackground
+        $colorOne={'#000000'}
+        $colorTwo={'#000000'}
+        $height={30}
+        $radius={55}
+        $zindex={-1} />
+      <StyledBackground
+        $colorOne={'#FFFFFF'}
+        $colorTwo={'#000000'}
+        $height={30}
+        $overlap={-30}
+        $zindex={0} />
+      <StyledBackground
+        $colorOne={'#FFFFFF'}
+        $colorTwo={'#FFFFFF'}
+        $height={25}
+        $overlap={-18}
+        $radius={55}
+        $zindex={-3} />
+    </BackgroundWrapper>
   )
 }
 

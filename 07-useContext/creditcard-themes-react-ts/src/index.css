@@ -73,3 +73,11 @@ input[type="radio"]:focus {
 .form-control:focus-within {
   color: var(--form-control-color);
 }
+
+#iphoneFrame {
+  z-index: 1;
+  position: absolute;
+  height: 1080px;
+  width: calc(1080/4*3);
+  top: 10%;
+}
