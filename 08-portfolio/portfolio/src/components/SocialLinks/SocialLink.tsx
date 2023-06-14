@@ -4,6 +4,7 @@ import { faGithub,faLinkedin,faTwitter,faYoutube} from "@fortawesome/free-brands
 
 import { SocialType, SocialLink as SocialLinkType } from "../types/index";
 import { Icon } from "../common/Icon/Icon";
+import { StyledSocialLink } from "./SocialLink.styles";
 
 const SocialIconMapping: { [key in SocialType]: IconDefinition } = {
   Github: faGithub,
@@ -22,8 +23,11 @@ export const SocialLink: FC<SocialLinkProps> = ({ socialLink }) => {
   const { socialType, url } = socialLink;
   const icon = SocialIconMapping[socialType];
   return (
-    <a href={url}>
+    <StyledSocialLink href={ url }>
       <Icon icon={icon} />
-    </a>
+    </StyledSocialLink>
+    // <a href={url}>
+    //   <Icon icon={icon} />
+    // </a>
   );
 };

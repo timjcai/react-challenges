@@ -15,7 +15,12 @@ const pageDB: PageDb = {
       handle: "@tcai",
       profilePicture: "https://res.cloudinary.com/dhxonutdu/image/upload/v1686732984/profile/20230209_LeWagon_0023_bv3mzo.jpg"
     },
-    socialLinks: [{ socialType: "Github", url: "https://github.com/timjcai" }, { socialType: "Linkedin", url: "https://www.linkedin.com/in/tim-j-cai/" }],
+    socialLinks: [
+      { socialType: "Github", url: "https://github.com/timjcai" },
+      { socialType: "Linkedin", url: "https://www.linkedin.com/in/tim-j-cai/" },
+      { socialType: "Website", url: "https://timjcai.github.io" },
+      { socialType: "Blog", url: "https://timjcai.notion.site/Tim-s-Blog-835ba95701ee4a639e9da3e613a5960d" },
+    ],
   },
 }
 

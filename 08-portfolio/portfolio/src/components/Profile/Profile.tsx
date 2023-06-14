@@ -2,7 +2,7 @@ import { FC } from "react";
 import { SocialLink } from "../SocialLinks/SocialLink";
 import { PageData } from "../types";
 import { StyledProfile } from "./Profile.styles";
-import { FlexRowCont } from "../common/Container/Container.styles";
+import { FlexRowCont, FlexColCont } from "../common/Container/Container.styles";
 import { ProfilePicture } from "./ProfilePicture";
 
 type ProfileProps = {
@@ -17,14 +17,20 @@ export const Profile: FC<ProfileProps> = ({ pageData }) => {
 
   return (
     <StyledProfile>
-      <h2>{firstName} {lastName} </h2>
-      <ProfilePicture profilePicture={ profilePicture } />
-      <p>{ handle }</p>
+      <FlexRowCont>
+        <h2>{firstName} {lastName} </h2>
+      </FlexRowCont>
+      <ProfilePicture profilePicture={profilePicture} />
+      <p>Software Developer</p>
       <FlexRowCont>
         {socialLinks.map((socialLink) => {
           return <SocialLink socialLink={socialLink} key={socialLink.url} />;
         })}
       </FlexRowCont>
+      <p>{handle}</p>
+      <p>description here</p>
+
+      <button>Download Resume Here</button>
     </StyledProfile>
   );
 }
