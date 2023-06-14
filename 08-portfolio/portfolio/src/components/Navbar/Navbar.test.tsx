@@ -11,7 +11,7 @@ describe("Navbar1", () => {
 
 describe("Navbar2", () => {
   it("should render the logo and list of links: about, contact", () => {
-    render(<Navbar logo="" labels={ ['about', 'contact']} />);
+    render(<Navbar logo="" labels={ ['About', 'Contact']} />);
     const link = screen.getByRole("img")
     const about = screen.getByRole("link")
     const contact = screen.getByRole("link")

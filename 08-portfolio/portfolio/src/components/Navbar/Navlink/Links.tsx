@@ -1,8 +1,8 @@
 import React, { FC, useEffect } from 'react';
-import { StyledLink } from './Links.styles';
-import { Icon } from '../Icon/Icon';
+import { StyledLink } from '../../common/Links/Links.styles';
+import { Icon } from '../../common/Icon/Icon';
 
-import { NavLinkType } from '../../types/navbar';
+import { SectionType } from '../../types/navigation';
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip} from 'react-tooltip'
 
@@ -16,10 +16,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 type LinkProps = {
-  label: NavLinkType;
+  label: SectionType;
 }
 
-const NavIconMapping: { [key in NavLinkType]: IconDefinition } = {
+const NavIconMapping: { [key in SectionType]: IconDefinition } = {
   Portfolio: faBookOpenReader,
   Contact: faAddressBook,
   About: faUser,
