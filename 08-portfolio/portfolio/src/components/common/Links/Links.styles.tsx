@@ -12,5 +12,6 @@ export const StyledLink = styled(Link)`
   :hover {
     color: var(--accent);
     transition: ease-in 0.3s;
+
   }
 `;
