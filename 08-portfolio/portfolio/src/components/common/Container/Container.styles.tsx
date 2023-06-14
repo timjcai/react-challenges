@@ -6,6 +6,7 @@ export const FlexRowCont = styled.div`
   margin-bottom: 5px;
   margin-top: 20px;
   justify-content: center;
+  gap: 10px;
 `;
 
 export const FlexColCont = styled.div`

@@ -4,6 +4,7 @@ import { PageData } from "../types";
 import { StyledProfile } from "./Profile.styles";
 import { FlexRowCont, FlexColCont } from "../common/Container/Container.styles";
 import { ProfilePicture } from "./ProfilePicture";
+import { Button } from "../common/Button/Button.styles";
 
 type ProfileProps = {
   pageData: PageData
@@ -30,7 +31,7 @@ export const Profile: FC<ProfileProps> = ({ pageData }) => {
       <p>{handle}</p>
       <p>description here</p>
 
-      <button>Download Resume Here</button>
+      <Button>Download Resume Here</Button>
     </StyledProfile>
   );
 }

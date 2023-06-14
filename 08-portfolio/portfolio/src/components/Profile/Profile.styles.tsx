@@ -11,7 +11,7 @@ export const StyledProfile = styled.div`
   // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
   // backdrop-filter: blur(10px);
   // -webkit-backdrop-filter: blur(10px);
-  width: 25vw;
+  width: 22.25vw;
   height: 92.5vh;
   left: 1em;
 `;
@@ -23,6 +23,6 @@ export const StyledProfilePicture = styled.div`
   align-self: center;
   border-radius: 100%;
   height: 35vh;
-  width: 15vw;
+  width: 20vw;
   position: relative;
 `;

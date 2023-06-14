@@ -43,4 +43,5 @@
   border-radius: 20px;
   object-fit: cover;
   object-position: 60% 10%;
+  box-shadow: 5px 5px 1px var(--secondary);
 }
