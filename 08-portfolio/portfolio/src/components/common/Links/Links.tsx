@@ -32,7 +32,6 @@ export const Links: FC<LinkProps> = ({ label }) => {
   return (
     <StyledLink className="nav-link" to={url}>
       <Icon icon={ icon } />
-      {label}
     </StyledLink>
   );
 }
