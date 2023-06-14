@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primary:#1B2021;
+  --secondary:#7D869C;
+  --accent: #FAC748;
+  --text:#A2ABAB;
+}

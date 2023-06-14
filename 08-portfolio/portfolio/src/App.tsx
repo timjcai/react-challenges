@@ -13,8 +13,9 @@ const pageDB: PageDb = {
       firstName: "Tim",
       lastName: "Cai",
       handle: "@tcai",
+      profilePicture: "https://res.cloudinary.com/dhxonutdu/image/upload/v1686732984/profile/20230209_LeWagon_0023_bv3mzo.jpg"
     },
-    socialLinks: [{ socialType: "Github", url: "https://tim.facebook.com" }],
+    socialLinks: [{ socialType: "Github", url: "https://github.com/timjcai" }, { socialType: "Linkedin", url: "https://www.linkedin.com/in/tim-j-cai/" }],
   },
 }
 

@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+#profilepicture {
+  height: inherit;
+  width: inherit;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 60% 10%;
+}

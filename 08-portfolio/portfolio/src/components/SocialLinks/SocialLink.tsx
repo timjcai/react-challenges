@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IconDefinition, faEarthAmericas, faSquareRss } from "@fortawesome/free-solid-svg-icons";
-import { faGithub,faTwitter,faYoutube} from "@fortawesome/free-brands-svg-icons";
+import { faGithub,faLinkedin,faTwitter,faYoutube} from "@fortawesome/free-brands-svg-icons";
 
 import { SocialType, SocialLink as SocialLinkType } from "../types/index";
 import { Icon } from "../common/Icon/Icon";
@@ -10,7 +10,8 @@ const SocialIconMapping: { [key in SocialType]: IconDefinition } = {
   Twitter: faTwitter,
   Youtube: faYoutube,
   Website: faEarthAmericas,
-  Blog: faSquareRss
+  Blog: faSquareRss,
+  Linkedin: faLinkedin
 };
 
 type SocialLinkProps = {
