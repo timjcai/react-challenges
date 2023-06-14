@@ -1,8 +1,10 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import { StyledLink } from './Links.styles';
 import { Icon } from '../Icon/Icon';
 
 import { NavLinkType } from '../../types/navbar';
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip as ReactTooltip} from 'react-tooltip'
 
 import {
   IconDefinition,
@@ -30,8 +32,9 @@ export const Links: FC<LinkProps> = ({ label }) => {
   const icon = NavIconMapping[label]
   const url:string = '#'
   return (
-    <StyledLink className="nav-link" to={url}>
-      <Icon icon={ icon } />
+    <StyledLink data-tooltip-id={label} data-tooltip-content={ label } className="nav-link" to={url}>
+      <Icon icon={icon} />
+      <ReactTooltip id={label} place="left" />
     </StyledLink>
   );
 }
