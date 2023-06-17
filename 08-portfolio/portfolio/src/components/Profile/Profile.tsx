@@ -2,7 +2,7 @@ import { FC } from "react";
 import { SocialLink } from "../SocialLinks/SocialLink";
 import { PageData } from "../types";
 import { StyledProfile } from "./Profile.styles";
-import { FlexRowCont, FlexColCont } from "../common/Container/Container.styles";
+import { FlexRowCont, FlexCont } from "../common/Container/Container.styles";
 import { ProfilePicture } from "./ProfilePicture";
 import { Button } from "../common/Button/Button.styles";
 import { Heading, Paragraph } from "../common/Text";
@@ -13,26 +13,23 @@ type ProfileProps = {
 
 export const Profile: FC<ProfileProps> = ({ pageData }) => {
   const {
-    user: { firstName, lastName, handle, profilePicture },
+    user: { firstName, lastName, handle, profilePicture, job },
     socialLinks,
   } = pageData;
 
   return (
     <StyledProfile>
-      <FlexRowCont>
-        <Heading>{firstName} {lastName} </Heading>
-      </FlexRowCont>
-      <ProfilePicture profilePicture={profilePicture} />
-      <Paragraph $fontsize={ 1 }>Software Developer</Paragraph>
-      <FlexRowCont>
+      <ProfilePicture profilePicture={profilePicture} firstName={firstName} lastName={lastName} job={job} />
+      <FlexCont $d={'row'} $m={'20px 0px 0px 0px'} $jc={'center'} $g={ 16 }>
         {socialLinks.map((socialLink) => {
           return <SocialLink socialLink={socialLink} key={socialLink.url} />;
         })}
-      </FlexRowCont>
-      <Paragraph $fontsize={ 0.5 }>{handle}</Paragraph>
-      <Paragraph $fontsize={ 0.5 }>description here</Paragraph>
+      </FlexCont>
+      <FlexCont $d={'column '} $m={'1em;'} $jc={'center'} $ai={ 'center' }>
+        {/* <Paragraph $fontsize={ 0.5 }>description here</Paragraph> */}
 
-      <Button>Download Resume Here</Button>
+        <Button>Download Resume Here</Button>
+      </FlexCont>
     </StyledProfile>
   );
 }

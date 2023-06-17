@@ -13,7 +13,8 @@ const pageDB: PageDb = {
       firstName: "Tim",
       lastName: "Cai",
       handle: "@tcai",
-      profilePicture: "https://res.cloudinary.com/dhxonutdu/image/upload/v1686732984/profile/20230209_LeWagon_0023_bv3mzo.jpg"
+      profilePicture: "https://res.cloudinary.com/dhxonutdu/image/upload/v1686732984/profile/20230209_LeWagon_0023_bv3mzo.jpg",
+      job: 'Web Developer'
     },
     socialLinks: [
       { socialType: "Github", url: "https://github.com/timjcai" },

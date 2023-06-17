@@ -5,6 +5,7 @@ export type User = {
   lastName: string;
   handle: string;
   profilePicture?: string;
+  job?: string;
 }
 
 export type PageData = {

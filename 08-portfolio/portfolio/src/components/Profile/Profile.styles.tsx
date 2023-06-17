@@ -4,7 +4,6 @@ export const StyledProfile = styled.div`
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding: 10px 20px 10px;
   border: 0.5px solid rgba(255, 255, 255, 0.39);
   border-radius: 16px;
   // background: rgba(255, 255, 255, 0.39);
@@ -12,8 +11,9 @@ export const StyledProfile = styled.div`
   // backdrop-filter: blur(10px);
   // -webkit-backdrop-filter: blur(10px);
   width: 22.25vw;
-  height: 92.5vh;
+  height: 80vh;
   left: 1em;
+  overlay: fill;
 `;
 
 export const StyledProfilePicture = styled.div`
@@ -21,8 +21,8 @@ export const StyledProfilePicture = styled.div`
   justify-content: center;
   align-items: center;
   align-self: center;
-  border-radius: 100%;
-  height: 35vh;
-  width: 20vw;
+  border-radius: 16px;
+  height: 60vh;
+  width: 22.25vw;
   position: relative;
 `;

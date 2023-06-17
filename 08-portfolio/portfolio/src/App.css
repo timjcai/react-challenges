@@ -40,8 +40,7 @@
 #profilepicture {
   height: inherit;
   width: inherit;
-  border-radius: 20px;
+  border-radius: 16px;
   object-fit: cover;
   object-position: 60% 10%;
-  box-shadow: 5px 5px 1px var(--secondary);
 }

@@ -1,15 +1,27 @@
 import styled from 'styled-components';
 
-export const FlexRowCont = styled.div`
+interface ContainerProps {
+  $d?: string;
+  $p?: string;
+  $m?: string;
+  $jc?: string;
+  $g?: number;
+  $ai?: string;
+}
+
+export const FlexRowCont = styled.div<ContainerProps>`
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
   margin-top: 20px;
-  justify-content: center;
-  gap: 10px;
 `;
 
-export const FlexColCont = styled.div`
+export const FlexCont = styled.div<ContainerProps>`
   display: flex;
-  flex-direction: column;
+  flex-direction: ${props=>props.$d};
+  padding: ${props => props.$p};
+  padding: ${props => props.$m};
+  justify-content: ${props => props.$jc};
+  gap: ${props => props.$g}px;
+  align-items: ${props => props.$ai};
 `;
