@@ -15,16 +15,26 @@ const SocialIconMapping: { [key in SocialType]: IconDefinition } = {
   Linkedin: faLinkedin
 };
 
+const ColorIconMapping: { [key in SocialType]: string } = {
+  Github: '#000000',
+  Twitter: '#1da1f2',
+  Youtube: '#ff0000',
+  Website: '#0abf53',
+  Blog: '#fd7622',
+  Linkedin: '#0a66c2'
+}
+
 type SocialLinkProps = {
   socialLink: SocialLinkType;
 };
 
-export const SocialLink: FC<SocialLinkProps> = ({ socialLink }) => {
+export const SocialLinkButton: FC<SocialLinkProps> = ({ socialLink }) => {
   const { socialType, url } = socialLink;
   const icon = SocialIconMapping[socialType];
+  const color = ColorIconMapping[socialType];
   return (
-    <StyledSocialLink href={ url }>
-      <Icon icon={icon} />
+    <StyledSocialLink href={url} color={ color }>
+      <Icon icon={icon} color={ color } />
     </StyledSocialLink>
     // <a href={url}>
     //   <Icon icon={icon} />

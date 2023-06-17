@@ -11,7 +11,7 @@ export const StyledProfile = styled.div`
   // backdrop-filter: blur(10px);
   // -webkit-backdrop-filter: blur(10px);
   width: 22.25vw;
-  height: 80vh;
+  height: 60vh;
   left: 1em;
   overlay: fill;
 `;

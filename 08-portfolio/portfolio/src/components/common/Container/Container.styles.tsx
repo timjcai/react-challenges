@@ -7,6 +7,7 @@ interface ContainerProps {
   $jc?: string;
   $g?: number;
   $ai?: string;
+  $w?: string;
 }
 
 export const FlexRowCont = styled.div<ContainerProps>`
@@ -24,4 +25,5 @@ export const FlexCont = styled.div<ContainerProps>`
   justify-content: ${props => props.$jc};
   gap: ${props => props.$g}px;
   align-items: ${props => props.$ai};
+  width: ${props => props.$w};
 `;
