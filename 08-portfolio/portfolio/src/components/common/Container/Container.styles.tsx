@@ -10,13 +10,6 @@ interface ContainerProps {
   $w?: string;
 }
 
-export const FlexRowCont = styled.div<ContainerProps>`
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 5px;
-  margin-top: 20px;
-`;
-
 export const FlexCont = styled.div<ContainerProps>`
   display: flex;
   flex-direction: ${props=>props.$d};

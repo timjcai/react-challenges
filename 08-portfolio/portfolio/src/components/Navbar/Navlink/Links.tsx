@@ -27,7 +27,7 @@ const slugify = (text: SectionType) => {
   return `/${slug.join('-')}`
 }
 
-const NavIconMapping: { [key in SectionType]: IconDefinition } = {
+export const NavIconMapping: { [key in SectionType]: IconDefinition } = {
   Portfolio: faBookOpenReader,
   Contact: faAddressBook,
   About: faUser,
