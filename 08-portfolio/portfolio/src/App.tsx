@@ -1,8 +1,11 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
 import './App.css';
+
 import { Navbar } from './components/Navbar/Navbar';
-import { BrowserRouter } from 'react-router-dom'
 import { Profile } from './components/Profile/Profile';
+import { Page } from './pages/Page';
 import { PageDb, SectionType } from './components/types';
 
 const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience', 'Contact']
@@ -31,6 +34,13 @@ function App() {
       <div className="App">
         <header className="App-header">
           <Profile pageData={pageDB['tim']} />
+          <Routes>
+            <Route path="/" element={<Page text={'about'} />} />
+            <Route path="/about" element={<Page text={ 'about' } />} />
+            <Route path="/portfolio" element={<Page text={ 'portfolio'} />} />
+            <Route path="/work-experience" element={<Page text={ 'work-experience'}/>} />
+            <Route path="/contact" element={<Page text={ 'contact'} />} />
+          </Routes>
           <Navbar labels={ labeldata } />
         </header>
       </div>

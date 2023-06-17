@@ -13,18 +13,13 @@ type ProfileProps = {
 
 export const Profile: FC<ProfileProps> = ({ pageData }) => {
   const {
-    user: { firstName, lastName, handle, profilePicture, job },
+    user: { firstName, lastName, profilePicture, job },
     socialLinks,
   } = pageData;
 
   return (
     <StyledProfile>
       <ProfilePicture profilePicture={profilePicture} firstName={firstName} lastName={lastName} job={job} socialLinks={ socialLinks } />
-      {/* <FlexCont $d={'row'} $m={'20px 0px 0px 0px'} $jc={'center'} $g={ 16 }>
-        {socialLinks.map((socialLink) => {
-          return <SocialLink socialLink={socialLink} key={socialLink.url} />;
-        })}
-      </FlexCont> */}
       {/* <FlexCont $d={'column '} $m={'1em;'} $jc={'center'} $ai={ 'center' }>
         <Paragraph $fontsize={ 0.5 }>description here</Paragraph>
 

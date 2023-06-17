@@ -19,6 +19,14 @@ type LinkProps = {
   label: SectionType;
 }
 
+const slugify = (text: SectionType) => {
+  const slug: string[] = [];
+  text.split(' ').forEach((word) => {
+    slug.push(word.toLowerCase())
+  })
+  return `/${slug.join('-')}`
+}
+
 const NavIconMapping: { [key in SectionType]: IconDefinition } = {
   Portfolio: faBookOpenReader,
   Contact: faAddressBook,
@@ -30,7 +38,7 @@ const NavIconMapping: { [key in SectionType]: IconDefinition } = {
 export const Links: FC<LinkProps> = ({ label }) => {
   // const url: string = `/${label}`
   const icon = NavIconMapping[label]
-  const url:string = '#'
+  const url = slugify(label)
   return (
     <StyledLink data-tooltip-id={label} data-tooltip-content={ label } className="nav-link" to={url}>
       <Icon icon={icon} />

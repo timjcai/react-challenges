@@ -4,11 +4,10 @@ import { Links } from './Navlink/Links'
 import { SectionType } from '../types';
 
 type NavbarProps = {
-  logo?: string;
-  labels?: SectionType[];
+  labels: SectionType[];
 }
 
-export const Navbar: FC<NavbarProps> = ({ logo, labels }) => {
+export const Navbar: FC<NavbarProps> = ({ labels }) => {
   return (
     <StyledNavbar>
       {labels && labels.map((label) => {
