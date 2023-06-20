@@ -7,5 +7,6 @@ interface ParagraphProps {
 export const Paragraph = styled.p<ParagraphProps>`
   font-size: ${props => props.$fontsize}em;
   text-align: center;
-  color: var(--secondary)
+  color: var(--secondary);
+  margin: 0px;
 `;

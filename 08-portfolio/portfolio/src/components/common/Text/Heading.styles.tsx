@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 
-export const Heading = styled.h1`
-  font-size: 1.5em;
+type HeadingProps = {
+  $fontsize?: string;
+}
+
+
+export const Heading = styled.h1<HeadingProps>`
+  font-size: ${props => props.$fontsize};
   text-align: center;
-  color: var(--secondary)
+  color: var(--white);
+  margin: 0px;
 `;
