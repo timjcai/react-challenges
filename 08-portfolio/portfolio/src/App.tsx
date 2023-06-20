@@ -7,6 +7,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Profile } from './components/Profile/Profile';
 import { Page } from './pages/Page';
 import { PageDb, SectionType } from './components/types';
+import { FlexCont } from './components/common/Container/Container.styles';
 
 const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience']
 

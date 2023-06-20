@@ -12,7 +12,8 @@ import {
   faBriefcase,
   faUser,
   faGraduationCap,
-  faBookOpenReader
+  faBookOpenReader,
+  faCircle
 } from "@fortawesome/free-solid-svg-icons";
 
 type LinkProps = {
@@ -33,6 +34,7 @@ export const NavIconMapping: { [key in SectionType]: IconDefinition } = {
   About: faUser,
   "Work Experience": faBriefcase,
   Education: faGraduationCap,
+  Default: faCircle
 }
 
 export const Links: FC<LinkProps> = ({ label }) => {
