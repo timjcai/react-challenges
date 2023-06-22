@@ -8,8 +8,10 @@ import { Profile } from './components/Profile/Profile';
 import { Page } from './pages/Page';
 import { PageDb, SectionType } from './components/types';
 import { FlexCont } from './components/common/Container/Container.styles';
+import { Experience } from './pages/Experience';
+import { About } from './pages/About';
 
-const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience']
+const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience', 'Education']
 
 const pageDB: PageDb = {
   tim: {
@@ -36,10 +38,11 @@ function App() {
         <header className="App-header">
           <Profile pageData={pageDB['tim']} />
           <Routes>
-            <Route path="/" element={<Page text={'About'} />} />
-            <Route path="/about" element={<Page text={ 'About' } />} />
+            <Route path="/" element={<About text={'About'} />} />
+            <Route path="/about" element={<About text={ 'About' } />} />
             <Route path="/portfolio" element={<Page text={ 'Portfolio'} />} />
-            <Route path="/work-experience" element={<Page text={ 'Work Experience'}/>} />
+            <Route path="/work-experience" element={<Experience text={'Work Experience'} />} />
+            <Route path="/education" element={<Experience text={'Education' } />} />
           </Routes>
           <Navbar labels={ labeldata } />
         </header>

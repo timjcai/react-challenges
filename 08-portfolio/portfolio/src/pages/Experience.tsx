@@ -1,8 +1,8 @@
-import React, { FC, useEffect, useState } from 'react';
-import { SectionHeader } from '../components/SectionHeader/SectionHeader';
-import { SectionType } from '../components/types';
+import React, { FC } from 'react'
 import { PageBorder } from './Page.styles';
 import { Timeline } from '../components/Timeline/Timeline';
+import { SectionHeader } from '../components/SectionHeader/SectionHeader';
+import { SectionType } from '../components/types';
 
 type PageProps = {
   text: SectionType;
@@ -27,18 +27,12 @@ const pagedata = [
 ]
 
 
-
-// function capitalize(string: string ) {
-//   return string.charAt(0).toUpperCase() + string.slice(1);
-// }
-
-export const Page: FC<PageProps> = ({ text }) => {
+export const Experience: FC<PageProps> = ({ text }) => {
   return (
     <PageBorder>
-      <SectionHeader label={ text } />
+      <SectionHeader label={text} />
       <h1>{text}</h1>
       <Timeline resumedata={pagedata}></Timeline>
     </PageBorder>
-
   );
 }
