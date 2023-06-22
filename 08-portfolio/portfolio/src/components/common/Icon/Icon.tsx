@@ -8,7 +8,12 @@ type IconProps = {
   color?: string
 }
 
+type StackIconProps = {}
 
 export const Icon: FC<IconProps> = ({ icon, color }) => {
   return <FontAwesomeIcon icon={icon} width={20} color={ color } />;
 };
+
+export const StackIcon: FC<StackIconProps> = ({ }) => {
+  return ();
+}

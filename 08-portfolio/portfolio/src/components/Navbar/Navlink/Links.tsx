@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { StyledLink } from '../../common/Links/Links.styles';
+import { NavLink } from '../../common/Links/Links.styles';
 import { Icon } from '../../common/Icon/Icon';
 
 import { SectionType } from '../../types/navigation';
@@ -42,9 +42,9 @@ export const Links: FC<LinkProps> = ({ label }) => {
   const icon = NavIconMapping[label]
   const url = slugify(label)
   return (
-    <StyledLink data-tooltip-id={label} data-tooltip-content={ label } className="nav-link" to={url}>
+    <NavLink data-tooltip-id={label} data-tooltip-content={ label } className="nav-link" to={url}>
       <Icon icon={icon} />
       <ReactTooltip id={label} place="left" />
-    </StyledLink>
+    </NavLink>
   );
 }

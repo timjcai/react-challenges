@@ -10,6 +10,7 @@ import { PageDb, SectionType } from './components/types';
 import { FlexCont } from './components/common/Container/Container.styles';
 import { Experience } from './pages/Experience';
 import { About } from './pages/About';
+import { Portfolio } from './pages/Portfolio';
 
 const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience', 'Education']
 
@@ -40,7 +41,7 @@ function App() {
           <Routes>
             <Route path="/" element={<About text={'About'} />} />
             <Route path="/about" element={<About text={ 'About' } />} />
-            <Route path="/portfolio" element={<Page text={ 'Portfolio'} />} />
+            <Route path="/portfolio" element={<Portfolio text={ 'Portfolio'} />} />
             <Route path="/work-experience" element={<Experience text={'Work Experience'} />} />
             <Route path="/education" element={<Experience text={'Education' } />} />
           </Routes>
