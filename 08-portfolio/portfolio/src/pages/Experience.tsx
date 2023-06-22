@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 import { PageBorder } from './Page.styles';
 import { Timeline } from '../components/Timeline/Timeline';
-import { SectionHeader } from '../components/SectionHeader/SectionHeader';
+import { SectionHeader } from '../components/Badges/SectionBadge';
 import { SectionType } from '../components/types';
 import { Heading } from '../components/common/Text';
 

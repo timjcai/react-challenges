@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-import { SectionHeader } from "../components/SectionHeader/SectionHeader";
+import { SectionHeader } from "../components/Badges/SectionBadge";
 import { Heading } from "../components/common/Text";
 import { PageBorder } from "./Page.styles";
 import { SectionType } from '../components/types';

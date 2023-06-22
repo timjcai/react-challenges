@@ -55,9 +55,9 @@ export const TimelinePoint: FC<PointProps> = ({ children, time, title, companyna
   return (
     <StyledPoint>
       <TimelineContent>
-        <Paragraph $fontsize={0.5} $textalign={ 'center'}>{time}</Paragraph>
+        <Paragraph $fontsize={0.5} $textalign={ 'center'} $margin={ '0px'}>{time}</Paragraph>
         <Heading $fontsize={'1em'}>{title}</Heading>
-        <Paragraph $fontsize={0.5} $textalign={ 'center'}>{companyname}</Paragraph>
+        <Paragraph $fontsize={0.5} $textalign={ 'center'} $margin={ '0px'}>{companyname}</Paragraph>
       </TimelineContent>
     </StyledPoint>
   )
