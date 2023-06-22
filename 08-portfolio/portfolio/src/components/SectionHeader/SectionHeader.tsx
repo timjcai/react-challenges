@@ -18,6 +18,7 @@ const StyledSectionHeader = styled.div`
   gap: 0.5em;
   font-size: 12px;
   padding: 0.25em 1.5em;
+  width: fit-content;
 `;
 
 const StyledHeaderText = styled.p`
