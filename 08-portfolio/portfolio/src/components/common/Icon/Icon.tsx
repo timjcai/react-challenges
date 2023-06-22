@@ -5,7 +5,6 @@ import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
 
 import { DevIconType } from "../../types";
 import styled from 'styled-components'
-import { NumberLiteralType } from "typescript";
 
 type IconProps = {
   icon: IconDefinition,

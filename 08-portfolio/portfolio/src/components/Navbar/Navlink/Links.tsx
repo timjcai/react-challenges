@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { NavLink } from '../../common/Links/Links.styles';
+import { NavLink } from '../../common/Text/Links.styles';
 import { Icon } from '../../common/Icon/Icon';
 
 import { SectionType } from '../../types/navigation';

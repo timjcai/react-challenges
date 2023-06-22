@@ -12,7 +12,7 @@ export const StackBadge: FC<BadgeComponents> = ({ label }) => {
   return (
     <StyledBadge $padding={'3px 5px 3px 5px' }>
       <StackIcon icon={label} />
-      <Paragraph $fontsize={0.75} $color={ 'var(--secondary)'} $margin={ '0px'}>{label}</Paragraph>
+      <Paragraph $fontsize={0.5} $color={ 'var(--secondary)'} $margin={ '0px'}>{label}</Paragraph>
     </StyledBadge>
   );
 }
