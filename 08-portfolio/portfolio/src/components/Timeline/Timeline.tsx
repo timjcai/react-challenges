@@ -28,6 +28,8 @@ const TimelineContent = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  position: relative;
+  top: -3px;
 `;
 
 export const Timeline: FC<TimelineProps> = ({ resumedata }) => {
@@ -47,7 +49,7 @@ const StyledPoint = styled.li`
   display: list-item;
   list-style-type: disc;
   margin-bottom: 20px;
-  margin-left: -17px;
+  margin-left: -16px;
   color: white;
 `;
 
