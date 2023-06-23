@@ -11,29 +11,24 @@ type PageProps = {
 
 const pagedata = [
   {
-    time: "Apr 2023 - Present",
-    title: "self-employed",
-    companyname: 'bootstrapping startups'
+    time: "Jan 2023 - Mar 2023",
+    title: "Web Dev Bootcamp Student",
+    companyname: 'Le Wagon'
   },
   {
-    time: "Feb 2022 - Nov 2022",
-    title: "Growth Operations",
-    companyname: 'Blinq Technologies'
+    time: "Jun 2014 - Jun 2018",
+    title: "Bachelor of Commerce & Diploma of Languages",
+    companyname: 'University of Melbourne'
   },
   {
-    time: "Jun 2021 - Feb 2022",
-    title: "Growth Hacker",
-    companyname: 'Startupbootcamp'
-  },
-  {
-    time: "Feb 2020 - Feb 2022",
-    title: "SMB Account Executive",
-    companyname: 'DoorDash Australia'
+    time: "Jan 2017 - Jun 2017",
+    title: "Exchange Semester",
+    companyname: 'University of Southern California'
   }
 ]
 
 
-export const Experience: FC<PageProps> = ({ text }) => {
+export const Education: FC<PageProps> = ({ text }) => {
   return (
     <PageBorder>
       <SectionHeader label={text} />

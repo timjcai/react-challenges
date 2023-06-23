@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { SocialLink } from "../types";
 import { FlexCont } from "../common/Container/Container.styles";
 import { SocialLinkButton } from "../SocialLinks/SocialLink";
+import { TextOverlay, TextOverlayHeading, TextOverlayParagraph } from "../common/Text";
 
 type ProfilePictureProps = {
   profilePicture?: string,
@@ -12,25 +13,6 @@ type ProfilePictureProps = {
   job?: string;
   socialLinks: SocialLink[];
 }
-
-const TextOverlay = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align:left;
-  position: absolute;
-  bottom: 3px;
-  left: 30px;
-  margin-bottom: 10px;
-`;
-
-const TextOverlayHeading = styled.h2`
-  margin-bottom: -10px;
-  font-size: 1em;
-`;
-
-const TextOverlayParagraph = styled.p`
-  font-size: 0.6em;
-`;
 
 export const ProfilePicture: FC<ProfilePictureProps> = ({ profilePicture, firstName, lastName, job, socialLinks }) => {
   return (

@@ -9,6 +9,7 @@ import { PageDb, SectionType } from './components/types';
 import { Experience } from './pages/Experience';
 import { About } from './pages/About';
 import { Portfolio } from './pages/Portfolio';
+import { Education } from './pages/Education';
 
 const labeldata: SectionType[] = ['About', 'Portfolio', 'Work Experience', 'Education']
 
@@ -41,7 +42,7 @@ function App() {
             <Route path="/about" element={<About text={ 'About' } />} />
             <Route path="/portfolio" element={<Portfolio text={ 'Portfolio'} />} />
             <Route path="/work-experience" element={<Experience text={'Work Experience'} />} />
-            <Route path="/education" element={<Experience text={'Education' } />} />
+            <Route path="/education" element={<Education text={'Education' } />} />
           </Routes>
           <Navbar labels={ labeldata } />
         </header>
