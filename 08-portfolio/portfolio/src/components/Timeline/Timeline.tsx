@@ -28,6 +28,8 @@ const TimelineContent = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  position: relative;
+  top: -3px;
 `;
 
 export const Timeline: FC<TimelineProps> = ({ resumedata }) => {
@@ -47,7 +49,7 @@ const StyledPoint = styled.li`
   display: list-item;
   list-style-type: disc;
   margin-bottom: 20px;
-  margin-left: -17px;
+  margin-left: -16px;
   color: white;
 `;
 
@@ -55,9 +57,9 @@ export const TimelinePoint: FC<PointProps> = ({ children, time, title, companyna
   return (
     <StyledPoint>
       <TimelineContent>
-        <Paragraph $fontsize={0.5}>{time}</Paragraph>
+        <Paragraph $fontsize={0.5} $textalign={ 'center'} $margin={ '0px'}>{time}</Paragraph>
         <Heading $fontsize={'1em'}>{title}</Heading>
-        <Paragraph $fontsize={0.5}>{companyname}</Paragraph>
+        <Paragraph $fontsize={0.5} $textalign={ 'center'} $margin={ '0px'}>{companyname}</Paragraph>
       </TimelineContent>
     </StyledPoint>
   )

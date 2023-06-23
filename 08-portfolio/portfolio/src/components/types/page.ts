@@ -1,3 +1,4 @@
+import { DevIconType } from "./devicon";
 import { SocialLink } from "./social";
 
 export type User = {
@@ -16,3 +17,8 @@ export type PageData = {
 export type PageDb = {
   [key: string]: PageData;
 };
+
+export type stackType = {
+  heading: string;
+  labels: DevIconType[];
+}

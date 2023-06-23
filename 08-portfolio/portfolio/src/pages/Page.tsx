@@ -1,8 +1,9 @@
 import React, { FC, useEffect, useState } from 'react';
-import { SectionHeader } from '../components/SectionHeader/SectionHeader';
+import { SectionHeader } from '../components/Badges/SectionBadge';
 import { SectionType } from '../components/types';
 import { PageBorder } from './Page.styles';
 import { Timeline } from '../components/Timeline/Timeline';
+import { Heading } from '../components/common/Text';
 
 type PageProps = {
   text: SectionType;
@@ -36,7 +37,7 @@ export const Page: FC<PageProps> = ({ text }) => {
   return (
     <PageBorder>
       <SectionHeader label={ text } />
-      <h1>{text}</h1>
+      <Heading $margin={ '25px 0px 0px 0px'}>{text}</Heading>
       <Timeline resumedata={pagedata}></Timeline>
     </PageBorder>
 
