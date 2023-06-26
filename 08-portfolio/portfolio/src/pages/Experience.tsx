@@ -12,7 +12,7 @@ type PageProps = {
 const pagedata = [
   {
     time: "Apr 2023 - Present",
-    title: "self-employed",
+    title: "Self-employed",
     companyname: 'bootstrapping startups'
   },
   {

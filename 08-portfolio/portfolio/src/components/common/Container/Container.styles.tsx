@@ -20,11 +20,12 @@ export const FlexCont = styled.div<ContainerProps>`
   display: flex;
   flex-direction: ${props=>props.$d};
   padding: ${props => props.$p};
-  padding: ${props => props.$m};
+  margin: ${props => props.$m};
   justify-content: ${props => props.$jc};
   gap: ${props => props.$g}px;
   align-items: ${props => props.$ai};
   width: ${props => props.$w};
+  flex-wrap: wrap;
 `;
 
 export const ColumnContainer: FC<ColumnContainerProps> = ({ numbercolumns, children }) => {
