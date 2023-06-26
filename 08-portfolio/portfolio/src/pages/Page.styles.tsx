@@ -11,4 +11,8 @@ export const PageBorder = styled.div`
   flex-direction: column;
   padding: 2em;
   text-align: left;
+  @media(max-width: 1400px) {
+    left: 2vw;
+    width: 75vw;
+  }
 `;

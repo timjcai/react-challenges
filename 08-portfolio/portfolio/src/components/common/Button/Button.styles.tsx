@@ -8,6 +8,7 @@ export const Button = styled.button`
   font-size: 16px;
   border-radius: 8px;
   width: fit-content;
+  margin-bottom: 25px;
 
   &::before {
   }

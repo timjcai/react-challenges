@@ -49,7 +49,7 @@ export const About: FC<PageProps> = ({ text }) => {
         );
       })}
 
-      <FlexCont $d={ 'row' } $m={ '0px 0px 20px 0px'}>
+      <FlexCont $d={ 'row' } $m={ '0px 0px 20px 0px'} $jc={'space-between'}>
         {(stack).map((item) => {
           return (
             <FlexCont $d={'column'} $m={'0px 5px 0px 5px'}>

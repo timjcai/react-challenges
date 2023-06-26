@@ -14,6 +14,9 @@ export const StyledProfile = styled.div`
   height: 60vh;
   left: 1em;
   overlay: fill;
+  @media(max-width: 1400px) {
+    display: none;
+  }
 `;
 
 export const StyledProfilePicture = styled.div`

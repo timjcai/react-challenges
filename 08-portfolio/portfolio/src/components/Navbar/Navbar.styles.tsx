@@ -7,7 +7,7 @@ export const StyledNavbar = styled.div`
   margin: 1em;
   position: absolute;
   width: auto;
-  right: 5px;
+  right: 1em;
   border-radius: 16px;
   border: 0.5px solid rgba(255, 255, 255, 0.39)
   // background: rgba(255, 255, 255, 0.39);
