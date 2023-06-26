@@ -9,6 +9,7 @@ export const Button = styled.button`
   border-radius: 8px;
   width: fit-content;
   margin-bottom: 25px;
+  height: fit-content;
 
   &::before {
   }

@@ -5,7 +5,7 @@ export const StyledNavbar = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 1em;
-  position: absolute;
+  position: fixed;
   width: auto;
   right: 1em;
   border-radius: 16px;

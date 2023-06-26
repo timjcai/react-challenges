@@ -25,10 +25,7 @@ export const FlexCont = styled.div<ContainerProps>`
   gap: ${props => props.$g}px;
   align-items: ${props => props.$ai};
   width: ${props => props.$w};
-  @media(max-width: 1400px) {
-    flex-direction: column;
-    margin-bottom: 25px;
-  }
+  flex-wrap: wrap;
 `;
 
 export const ColumnContainer: FC<ColumnContainerProps> = ({ numbercolumns, children }) => {

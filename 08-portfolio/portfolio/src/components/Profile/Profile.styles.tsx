@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledProfile = styled.div`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   border: 0.5px solid rgba(255, 255, 255, 0.39);
   border-radius: 16px;
   // background: rgba(255, 255, 255, 0.39);
