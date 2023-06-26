@@ -1,24 +1,22 @@
 import styled from 'styled-components'
 
 type CardContainerProps = {
-  column: string;
-  row: string;
+  width: string;
+  height: string;
 }
 
 export const CardContainer = styled.div<CardContainerProps>`
-  grid-column: ${props => props.column};
-  grid-row: ${props => props.row};
+  width: ${props => props.width};
+  height: ${props => props.height};
   border: 1px solid white;
   border-radius: 16px;
 `;
 
 export const CasestudyWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 25vw;
-  grid-template-rows: 25vh 25vh 25vh;
-  column-gap: 10px;
-  row-gap: 10px;
-  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: auto;
 `;
 
 type CardProps = {
@@ -29,10 +27,18 @@ type CardProps = {
 export const StyledCasestudyCard = styled.div<CardProps>`
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   border: 0.5px solid rgba(255, 255, 255, 0.39);
+  margin-bottom: 1em;
   border-radius: 16px;
   width: ${props => props.width};
   height: ${props => props.height};
   object-fit: cover;
+  @media (max-width: 1400px) {
+    width: 75vw;
+  }
+  @media (max-width: 880px) {
+    width: auto;
+    height: auto;
+  }
 `;

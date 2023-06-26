@@ -4,9 +4,9 @@ export const PageBorder = styled.div`
   // border: 1px solid white;
   border-radius: 16px;
   position: absolute;
-  left: 30vw;
+  left: 25vw;
   height: 70vh;
-  width: 50vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   padding: 2em;
@@ -14,5 +14,6 @@ export const PageBorder = styled.div`
   @media(max-width: 1400px) {
     left: 2vw;
     width: 75vw;
+    height: 90vh;
   }
 `;
