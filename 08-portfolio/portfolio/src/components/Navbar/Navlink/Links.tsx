@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { NavLink } from '../../common/Text/Links.styles';
 import { Icon } from '../../common/Icon/Icon';
 

@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC } from 'react'
 import { SectionHeader } from '../components/Badges/SectionBadge';
 import { PageBorder } from './Page.styles';
 import { SectionType, stackType } from '../components/types';
@@ -12,9 +12,8 @@ type PageProps = {
 }
 
 const blurb: string[] = [
-  'ex-Growth & Operations for startups',
-  'After tinkering and learning to code on the side, I decided to take the leap and make a transition from selling software to building the software.',
-  'Languages:'
+  'ex-Growth & Operations for startups | Full Stack Web Developer',
+  'After tinkering and learning to code on the side, I decided to take the leap and make a transition from selling software to building the software.'
 ]
 const stack: stackType[] = [
   {
@@ -36,19 +35,19 @@ export const About: FC<PageProps> = ({ text }) => {
     <PageBorder>
       <SectionHeader label={text} />
       <Heading $margin={ '25px 0px 0px 0px'}>{text}</Heading>
-      <h3>Full Stack Web Developer</h3>
+      <h4>Full Stack Web Developer</h4>
 
       {(blurb).map((item) => {
         return (
           <>
-            <Paragraph $fontsize={0.75} $margin={' 0px'}>
+            <Paragraph $fontsize={0.75} $margin={' 0px'} $color={ 'var(--text)'}>
               {item}
             </Paragraph>
             <br/>
           </>
         );
       })}
-
+      <h4>Languages</h4>
       <FlexCont $d={ 'row' } $m={ '0px 0px 20px 0px'} $jc={'space-between'}>
         {(stack).map((item) => {
           return (
